@@ -3,6 +3,8 @@ gitpurge
 
 Shell script to purge files and folders from git history.
 
+Attention: This will make your history incompatible with the history of others working on the repository. We assume you know this, it is the same as with rebase.
+
 
 ### Install
 
@@ -11,9 +13,11 @@ Copy the gitpurge file into e.g. /usr/bin/gitpurge. Enable executable permission
 
 ### Usage
 
-Backup the .git folder of the repository. Or better, backup the entire thing.
+Backup the .git folder of the repository. Or better, backup the entire thing. Or even better: Clone or copy the repository somewhere else and work on the clone.
 
 Open a commandline in the root of the repository.
+
+Remove all remotes. But make sure you have everything you want to keep in local branches. This means, you might have to checkout some of the remote branches to create local follow branches.
 
 Assume you want to purge these files and folders (example from Drupal):
 - htdocs/sites/a.com/files
