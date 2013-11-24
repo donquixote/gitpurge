@@ -4,13 +4,12 @@ gitpurge
 Shell script to purge files and folders from git history.
 
 
-Install
-=======
+### Install
+
 
 Copy the gitpurge file into e.g. /usr/bin/gitpurge. Enable executable permission.
 
-Usage
-======
+### Usage
 
 Backup the .git folder of the repository. Or better, backup the entire thing.
 
